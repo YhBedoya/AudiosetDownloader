@@ -32,7 +32,8 @@ if __name__ == '__main__':
         csv_dataset='./data/unbalanced_train_segments.csv',
         destination_dir='./output',
         fs=16000,
-        num_partitions=4
+        num_partitions=1,
+        mode = 'partitions'
     )
 
     args = parser.parse_args()
